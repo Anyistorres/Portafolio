@@ -1,0 +1,148 @@
+<!-- ============================================= -->
+<!-- contacto.html - Formulario de Contacto -->
+<!-- ============================================= -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- ============================================= -->
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <!-- ============================================= -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================= -->
+    <!-- SECCIÓN DE CONTACTO -->
+    <!-- ============================================= -->
+    <main>
+        <section class="contact-container">
+            <div class="contact-header">
+                <h1>Ponte en Contacto</h1>
+                <p>¿Tienes algún proyecto en mente o simplemente quieres saludar? ¡Escríbeme!</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Información de contacto directa -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Ubicación</h3>
+                        <p>Medellín, Colombia</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📧 Correo Electrónico</h3>
+                        <p>tuemail@ejemplo.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📱 Teléfono</h3>
+                        <p>+57 300 123 4567</p>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <form 
+                id  ="formulario-contacto"
+                class= "contact-form"
+                action= "https://formsubmit.co/inganyistorresadso@gmail.com"
+                method= "POST"
+            >
+            
+            <!-- evita capcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- asunto del correo -->
+            <input type="hidden" name="_subject" value="Nuevo Mensaje desde tu portafolio">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
+
+            <div class="form-group">
+
+                <label for="nombre">Nombre Completo</label>
+
+                <input 
+                type="text" 
+                name="" 
+                id="nombre"
+                placeholder="Tu nombre completo"
+                required>                 
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="email">Correo Electrónico</label>
+
+                <input 
+                type="email" 
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="asunto">Asunto</label>
+
+                <input 
+                type="text" 
+                id="asunto"
+                name="asunto"
+                placeholder="Motivo de tu asunto"
+                required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="mensaje">Mensaje</label>
+
+                <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5" 
+                placeholder="Cuentame sobre tu proyecto"
+                required>
+                </textarea>
+        
+            </div>
+
+            <button type="submit" class="btn-form">Enviar mensaje
+             </button>
+
+            
+            </form>
+
+        </div>
+    </section>
+
+    </main> 
+
+    <!-- ============================================= -->
+    <!-- FOOTER O PIE DE PAGINA -->
+    <!-- ============================================= -->
+    <footer>
+        <p>© 2026 Mi Portafolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
